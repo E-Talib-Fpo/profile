@@ -1,0 +1,40 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #1c1e21;
+}
+
+#login-form {
+    background-color: #fff;
+}
+
+#login-form .form-control {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+
+#login-form .btn-primary {
+    background-color: #1877f2;
+    border-color: #1877f2;
+    font-size: 1.1rem;
+}
+
+#login-form .btn-primary:hover {
+    background-color: #166fe5;
+    border-color: #166fe5;
+}
+
+#login-form .btn-success {
+    background-color: #42b72a;
+    border-color: #42b72a;
+    font-size: 1.1rem;
+}
+
+#login-form .btn-success:hover {
+    background-color: #36a420;
+    border-color: #36a420;
+}
